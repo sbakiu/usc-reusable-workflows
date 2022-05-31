@@ -40,7 +40,7 @@ on:
 jobs:
   buildandpushdocker:
     name: Build and Push
-    runs-on: [self-hosted, dind]
+    runs-on: [self-hosted, onefitdind]
 
     outputs:
        image_version: ${{ steps.subscriber_meta.outputs.version }}
